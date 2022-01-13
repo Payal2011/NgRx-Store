@@ -1,1 +1,170 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0;
+	
+	
+}
+
+.f-s{
+	font-size: small;
+}
+.f-30{
+	font-size:30px;
+}
+caption{
+	font-size:17px;
+	position: sticky;
+}
+.color-grey{
+	color:grey;
+}
+.text-white{
+	color:white;
+}
+.pull-right{
+	float:right;
+}
+.pull-left{
+	float:left;
+}
+.w-25{
+	width:25%;
+}
+.w-50{
+	width:50%;
+}
+.title{
+	width: 100%;
+    margin: 2px 45%;
+}
+.search{
+	border: 0;
+    background: #ffffff;
+    border-bottom: 1px solid;
+    width: 100%;
+	outline:none;
+}
+.text-left{text-align:left;}
+.text-right{text-align:right;}
+.text-center{
+    text-align: center;
+}
+.wrapper{
+    width: 100%;
+    max-width: 1250px;
+	margin:7px auto;
+	background-color:#ffffff;
+}
+.main-content{
+	padding: 10px 20px;
+}
+
+.header {
+	line-height: 1.8;
+    overflow: hidden;
+}
+
+.bold{
+	font-weight: bold;
+}
+.blur{
+	opacity:0.2;
+}
+.row {
+	display: flex;
+}
+.card {
+    position: relative;
+    height: 100%;
+}
+.hand{cursor: pointer;}
+.table-display{
+	height: 400px;
+	width: 100%;
+	overflow:auto;
+	margin:15px 25px;
+}
+table{
+	border-spacing: unset;
+	width:100%;
+	font-size:14px;
+	position: relative;
+} 
+th,td{
+	padding:23px;
+	text-align:left;
+}
+th{
+	background: gainsboro;
+	position: sticky;
+	top: 0;
+}
+tr:nth-child(odd) {
+	background-color:whitesmoke ;
+}
+.no-event{
+	pointer-events: none;
+	opacity:0.3;
+}
+.types label{
+	text-transform: capitalize;
+}
+.tr{
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+  }
+  td{
+    padding: 5px;
+  }
+
+  .modal {
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+  }
+  
+  /* The Close Button */
+  .close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+  }
+  .disbaled{
+	pointer-events: none;
+    cursor: none;
+  }
+.margin-action{
+	margin: 2px 30px;
+}
+.add{margin:2px 55px}
+footer{
+	margin: 0px 45%;
+}
+.f-20{
+	font-size: 20px;
+}

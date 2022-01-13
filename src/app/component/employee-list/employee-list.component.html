@@ -1,0 +1,24 @@
+<div class="employee-list">
+    <div class="title">Employee Details</div>
+    <div class="table-display">
+        <table class="table">
+            <tr>
+                <th>Profile</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+            <tr *ngFor="let employee of employees | async">
+                <td><img [src]="employee.avatar" [alt]="" class="employee-image" /></td>
+                <td>{{employee.first_name}}</td>
+                <td>{{employee.last_name}}</td>
+                <td>{{employee.email}}</td>
+                <td class="hand">
+                    <i title="delete" (click)="removeEmployee(employee)" class="f-20 fa fa-trash margin-action"></i>
+                    <i title="edit" (click)="edit(employee)" class="f-20 fa fa-pencil margin-action"></i>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

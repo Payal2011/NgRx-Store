@@ -1,0 +1,96 @@
+.employee-list {
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .add-employee{
+  padding: 9px;
+  background: rgba(60,128,189,.85);
+  color: white;
+  margin: 5px;
+  }
+  %button {
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+    margin : 2px;
+  
+    &:hover {
+      transform: scale(1.1);
+    }
+  
+    img {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  
+  .employee {
+    box-shadow: -3px 3px 13px 0 rgb(0 0 0 / 20%);
+    border-radius: 5px;
+    margin: 0 15px 30px 0;
+    width: 425px;
+    max-height: 400px;
+    height :180px;
+  
+    &:hover {
+      transform: scale(1.05);
+      .employee-actions {
+        display: flex;
+      }
+    }
+  
+    &-image {
+      max-width: 100%;
+      width: 40px;
+      border-radius: 40px;
+      height: 40px;
+      object-fit: cover;
+    }
+    &-details {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 15px;
+  
+      &__price {
+        font-weight: 500;
+        opacity: 0.7;
+        letter-spacing: 1px;
+        margin: 0;
+      }
+  
+      &__name {
+        opacity: 0.8;
+        font-weight: 500;
+        margin: 0;
+      }
+    }
+  
+    &-description {
+      padding: 10px 15px;
+  
+      p {
+        opacity: 0.6;
+        margin: 0;
+      }
+    }
+  
+    &-actions {
+      float:right;
+      padding: 0 15px;
+  
+      &__add {
+        @extend %button;
+        border: 2px solid rgb(52, 186, 219);
+      }
+  
+      &__remove {
+        @extend %button;
+        border: 2px solid indianred;
+      }
+    }
+  }
+  
